@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("Задание 3:");
         short number = 10500;
-        short result = (short) ((number / 10) / 10);
+        double result = (double) ((number / 10) / 10);
         System.out.println(result);
 
         System.out.println("Задание 4:");
