@@ -19,14 +19,14 @@ public class Calculator {
     public Long Devision(long a, long b) {
         return a*b;
     }
-    public Integer Multiplication(int a,int b) {
-        return a/b;
+    public Double Multiplication(int a,int b) {
+        return (double)a/b;
     }
     public Double Multiplication(double a,double b) {
         return a/b;
     }
-    public Long Multiplication(long a,long b) {
-        return a/b;
+    public Double Multiplication(long a,long b) {
+        return (double)a/b;
     }
     public Integer Subtraction(int a,int b) {
         return a-b;
