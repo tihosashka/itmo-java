@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void Oddnumbers() {
-        for (int x = 0; x < 100; x++) {
+    public static void Oddnumbers(int y) {
+        for (int x = 0; x < y; x++) {
             if (x % 2 == 0) {
                 continue;
             } else {
@@ -16,8 +16,8 @@ public class Main {
         }
     }
 
-    public static void dev() {
-        for (int x = 1; x < 101; x++) {
+    public static void dev(int y) {
+        for (int x = 1; x < y; x++) {
             if (x % 3 == 0 && x % 5 == 0) {
                 System.out.println("Делится на 3 и на 5: " + x);
             } else if (x % 3 == 0) {
@@ -55,15 +55,13 @@ public class Main {
         } else System.out.println("Результат: false");
     }
 
-    public static void array(){
-        int[] array = {3, -3, 7, 4, 5, 4, 3};
+    public static void array(int[] array){
         if (array[0] == 3 && array[array.length - 1] == 3) {
             System.out.println("Результат: true");
         } else System.out.println("Результат: false");
     }
 
-    public static void array2(){
-        int[] array = {3, -3, 7, 4, 5, 4, 3};
+    public static void array2(int[] array){
         int i=1;
         int j=3;
         boolean result = false;
@@ -88,8 +86,7 @@ public class Main {
         System.out.println(Arrays.toString(ints));
     }
 
-    public static void changeplace() {
-        int[] array = {5, 6, 7, 2};
+    public static void changeplace(int[] array) {
         System.out.println("Array 1: " + Arrays.toString(array));
         int[] array2 = new int [array.length];
         array2=array;
@@ -109,8 +106,7 @@ public class Main {
         }
     }
 
-    public static void unique() {
-        int[] a = {1, 2, 3, 1 , 2, 4};
+    public static void unique(int[] a) {
         int[] b = a;
         for (int i = 0; i < (a.length - 1); i++) {
             if (a[i] == b[i + 1])
@@ -131,13 +127,12 @@ public class Main {
     }
 
 
-
     public static void main(String[] args) {
         System.out.println("Задание 1:");
-        Main.Oddnumbers();
+        Main.Oddnumbers(100);
         System.out.println("=================");
         System.out.println("Задание 2:");
-        Main.dev();
+        Main.dev(101);
         System.out.println("=================");
         System.out.println("Задание 3:");
         Main.sum();
@@ -146,10 +141,10 @@ public class Main {
         Main.compare();
         System.out.println("=================");
         System.out.println("Задание 5:");
-        Main.array();
+        Main.array(new int[]{3, -3, 7, 4, 5, 4, 3});
         System.out.println("=================");
         System.out.println("Задание 6:");
-        Main.array2();
+        Main.array2(new int[]{3, -3, 7, 4, 5, 4, 3});
         System.out.println("=================");
         System.out.println("Часть 2:");
         System.out.println("Задание 1:");
@@ -159,10 +154,10 @@ public class Main {
         Main.inputarray();
         System.out.println("=================");
         System.out.println("Задание 3:");
-        Main.changeplace();
+        Main.changeplace(new int[]{5, 6, 7, 2});
         System.out.println("=================");
         System.out.println("Задание 4:");
-        Main.unique();
+        Main.unique(new int[]{1, 2, 3, 1, 2, 4});
 
 
 
